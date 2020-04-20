@@ -1,0 +1,81 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 800px;
+    margin: auto;
+    background-color: lightgray;
+    
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a, a:hover, a:active, a:visited {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: darkslategray;
+
+
+}
+
+#main {
+    
+    padding-bottom: 20px;
+}
+
+header {
+    justify-self: center;
+}
+
+footer {
+    color: darkslategray;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 20px;
+    border-top: solid 1px black;
+    display: grid;
+    
+}
+
+footer > p {
+    justify-self: center;
+}
+
+#navbar {
+    font-family: Georgia, Arial;
+    font-size: 1.2em;
+    padding: 5px;
+    color: darkgrey;
+     
+}
+
+
+#navbar ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+#portrait img {
+    width: 200px;
+}
+
+form, label, input, button {
+    font-size: 1.2em;
+    padding: 5px;
+    
+}
+
+#msg1, #msg2 {
+    font-size: 1.4em;
+}
