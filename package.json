@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js -e js, hbs, html, css"
+    "dev": "env-cmd -f ./config/dev.env nodemon src/app.js -e js, hbs, html, css"
   },
   "author": "Matteo",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "nodemon": "^2.0.3"
   }
 }

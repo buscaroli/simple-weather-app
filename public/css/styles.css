@@ -70,10 +70,15 @@ footer > p {
     width: 200px;
 }
 
+#wrapper {
+    text-align: center;
+}
+
 form, label, input, button {
     font-size: 1.2em;
     padding: 5px;
-    
+    border-radius: 5px;
+     
 }
 
 #msg1, #msg2 {

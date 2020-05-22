@@ -1,7 +1,7 @@
 const request = require('request');
 
 const urlGeolocation = 'https://api.mapbox.com/geocoding/v5/mapbox.places/';
-const geoKey = 'pk.eyJ1IjoibW1vbnR5eTc4IiwiYSI6ImNrOTA0OGV3aDBrY20za2xjZzVvdnljdDcifQ.ZMTIRSb1979wtqmdVpt0Lg';
+const geoKey = process.env.MAPBOX_API_KEY;
 
 
 
