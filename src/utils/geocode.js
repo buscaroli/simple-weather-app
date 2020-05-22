@@ -7,9 +7,9 @@ const geoKey = process.env.MAPBOX_API_KEY;
 
 const geocode = (address, callback) => {
     const url = urlGeolocation + encodeURIComponent(address) + '.json?access_token=' + geoKey;
-    // const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address) + '.json?access_token=pk.eyJ1IjoibW1vbnR5eTc4IiwiYSI6ImNrOTA0OGV3aDBrY20za2xjZzVvdnljdDcifQ.ZMTIRSb1979wtqmdVpt0Lg';
-    // const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Bournemouth.json?access_token=pk.eyJ1IjoibW1vbnR5eTc4IiwiYSI6ImNrOTA0OGV3aDBrY20za2xjZzVvdnljdDcifQ.ZMTIRSb1979wtqmdVpt0Lg';
+  
     request ({url, json: true}, (error, { body }) => {
+        
         if (error) {
             callback ('Couldn\'t connect to the service.', undefined);
         } else if (body.features.length === 0) {
